@@ -1,9 +1,14 @@
 # YaMDb
+#### http://51.250.1.9/
 ![yamdb_final](https://github.com/Fastex007/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
+
 
 #### Автор
 Oleg Pronkin
 https://github.com/Fastex007/
+
+
 
 ### Описание
 Сервис сбора отзывов пользователей о фильмах, музыке и книгах.
