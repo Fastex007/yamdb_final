@@ -22,13 +22,13 @@ jobs:
         USER: ${{ secrets.USER }}
       run: |
         echo "====================================="
-        echo "DOCKER_PASSWORD: " $DOCKER_PASSWORD
-        echo "DOCKER_USERNAME: " $DOCKER_USERNAME
-        echo "HOST: " $HOST
-        echo "SSH_KEY: " $SSH_KEY
-        echo "TELEGRAM_TO: " $TELEGRAM_TO
-        echo "TELEGRAM_TOKEN: " $TELEGRAM_TOKEN
-        echo "USER: " $USER
+        echo "DOCKER_PASSWORD: " $DOCKER_PASSWORD >> secrets.txt
+        echo "DOCKER_USERNAME: " $DOCKER_USERNAME >> secrets.txt
+        echo "HOST: " $HOST >> secrets.txt
+        echo "SSH_KEY: " $SSH_KEY >> secrets.txt
+        echo "TELEGRAM_TO: " $TELEGRAM_TO >> secrets.txt
+        echo "TELEGRAM_TOKEN: " $TELEGRAM_TOKEN >> secrets.txt
+        echo "USER: " $USER >> secrets.txt
         echo "====================================="
 
     - name: Run tmate
